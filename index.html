@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>CoffeeOrder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_green-deep_orange.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
-    <p>Paragraph</p>
+    <h1>Coffee order</h1>
+  <!--Select boxes for the options-->
+    <p>Choose size:</p>
+    <select name="size" id="coffee-size">
+      <option value="regular">Regular(12 ounces)</option>
+      <option value="large">Large(16 ounces)</option>
+    </select>
+    <p>Choose amount of toppings: </p>
+    <select name="toppings" id="coffee-toppings">
+      <option value="0">No toppings</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <p>Milk - $1.3<input type="checkbox">
+    <br>Whipped cream - $1.3<input type="checkbox">
+    <br>Cinnamon - $1.3<input type="checkbox">
+    <br>Chocolate syrup - $1.3<input type="checkbox"></p>
+    <br>
+    <!-- Accent-colored raised button with ripple -->
+    <button onclick="orderCoffee()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Order</button>
+    <br>
+    <p>Subtotal:</p>
+    <!--Subtotal output paragraph-->
+    <p id="subtotal"></p>
+    <p>HST:</p>
+    <!--HST output paragraph-->
+    <p id="tax"></p>
+    <p>Total:</p>
+    <!--Total output paragraph-->
+    <p id="total"></p>
   </body>
 </html>

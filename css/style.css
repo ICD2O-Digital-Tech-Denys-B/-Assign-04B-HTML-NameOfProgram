@@ -2,3 +2,15 @@
 * Created on: Sep 2020
 * This file contains the CSS for index.html
 */
+* {
+    text-align: center;
+}
+body { 
+    background: linear-gradient(#f0f0f0ff, #2c0d04ff);
+}
+h1 {
+    color: #a64d79;
+}
+p {
+    color:#4c1130;
+}
